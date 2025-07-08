@@ -77,7 +77,7 @@ work:
   - position: AI Research Intern
     company_name: IBM Research, India
     company_url: ''
-    company_logo: 'custom/ibm_logo.png'
+    company_logo: ''
     date_start: May, 2025
     date_end: Present
     summary: |2-
@@ -88,7 +88,7 @@ work:
   - position: AI Research Extern
     company_name: IBM Research, India
     company_url: ''
-    company_logo: 'custom/ibm_logo.png'
+    company_logo: ''
     date_start: May, 2024
     date_end: July, 2024
     summary: |
