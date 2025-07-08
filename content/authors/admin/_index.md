@@ -78,8 +78,8 @@ work:
     company_name: IBM Research, India
     company_url: ''
     company_logo: ''
-    date_start: 2025-05
-    date_end: 2025-07
+    date_start: 2025-05-08
+    date_end: 2025-07-25
     summary: |2-
       Responsibilities include:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -89,8 +89,8 @@ work:
     company_name: IBM Research, India
     company_url: ''
     company_logo: ''
-    date_start: 2024-04
-    date_end: 2024-07
+    date_start: 2024-04-22
+    date_end: 2024-07-22
     summary: |
       Responsibilities include:
       - Migrated infrastructure to a new data center
