@@ -50,11 +50,11 @@ education:
     institution: IIT, Bombay
     date_start: 2023-07-01
     date_end: Present
-    # summary: |
-    #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
+    summary: |
+      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+    button:
+      text: 'Read Thesis'
+      url: 'https://example.com'
   - area: BTech, Electrical and Electronics
     institution: Lakshmi Narain College of Technology, Bhopal
     date_start: 2018-07-01
