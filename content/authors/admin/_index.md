@@ -58,7 +58,7 @@ education:
   - area: BTech, Electrical and Electronics
     institution: Lakshmi Narain College of Technology, Bhopal
     date_start: 2018-07-01
-    date_end: 2022-06-31
+    date_end: 2022-06-30
     summary: |
       CGPA: 8.32/10
 
