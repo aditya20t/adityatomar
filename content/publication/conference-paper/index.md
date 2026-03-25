@@ -1,5 +1,5 @@
 ---
-title: 'Stereotype Detection as a Catalyst for Enhanced Bias Detection: A MTL Approach'
+title: 'Stereotype Detection as a Catalyst for Enhanced Bias Detection: A Multi-Task Learning Approach'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
