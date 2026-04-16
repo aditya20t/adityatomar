@@ -426,7 +426,8 @@ button {
 
 @media (max-width: 768px) {
   .global-doodle-container {
-    display: none;
+    opacity: 0.6;
+    pointer-events: none;
   }
 }
 
@@ -828,14 +829,79 @@ button {
   }
 }
 
+/* Responsive Nav Styles (Global) */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 2px solid var(--glass-border);
+  padding: 2rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-link {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobile-link.active {
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 3rem;
   }
 
-  .nav-links {
+  .desktop-only {
     display: none;
-    /* Mobile menu can be added later */
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
   }
 
   .projects-grid {
