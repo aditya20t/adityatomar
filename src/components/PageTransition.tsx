@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
-const eraserVariants = {
+const eraserVariants: Variants = {
     initial: {
         x: "100%",
         width: "100%"
