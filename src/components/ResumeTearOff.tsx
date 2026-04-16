@@ -13,19 +13,21 @@ const ResumeTearOff: React.FC = () => {
         // Trigger the download/open IMMEDIATELY to preserve user gesture context
         window.open(pdfPath, '_blank');
 
-        // Start tear off animation
+        // Start fade out animation
         controls.start({
-            y: [0, 50, window.innerHeight],
-            rotate: [0, 15, 45, 90],
-            opacity: [1, 1, 0],
-            transition: { duration: 0.8, ease: "easeIn" }
+            opacity: 0,
+            scale: 0.9,
+            transition: { duration: 0.4, ease: "easeOut" }
         });
 
-        // Reset paper position after a short delay
+        // Reset and fade back in after a short delay
         setTimeout(() => {
-            controls.set({ y: -100, rotate: 0, opacity: 0 });
-            controls.start({ y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } });
-        }, 1500);
+            controls.start({
+                opacity: 1,
+                scale: 1,
+                transition: { duration: 0.5, ease: "backOut" }
+            });
+        }, 1200);
     };
 
     return (
