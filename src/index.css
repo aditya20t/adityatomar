@@ -141,11 +141,9 @@ body {
     url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
   background-attachment: fixed;
   color: var(--text-primary);
-  font-size: 1.15rem;
-  /* Increased base size */
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
   line-height: 1.7;
-  letter-spacing: 0.5px;
-  /* Increased spacing */
+  letter-spacing: 0.2px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s ease;
@@ -228,7 +226,7 @@ button {
 
 .nav-logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
   font-weight: 700;
   background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   -webkit-background-clip: text;
@@ -315,7 +313,7 @@ button {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(3.5rem, 12vw, 6rem);
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 1.5rem;
@@ -783,10 +781,11 @@ button {
 
 .timeline-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1rem + 2vw, 1.5rem);
   margin-bottom: 0.5rem;
   color: var(--text-primary);
 }
+
 
 .timeline-institution {
   font-family: var(--font-main);
@@ -916,17 +915,13 @@ button {
     padding-top: 2rem;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
   .pub-meta {
     flex-wrap: wrap;
     font-size: 1rem;
   }
 
   .pub-title {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1rem + 2vw, 1.5rem);
   }
 
   .desktop-only {
