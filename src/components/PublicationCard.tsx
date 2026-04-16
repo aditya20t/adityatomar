@@ -25,13 +25,13 @@ const PublicationCard: React.FC<{ pub: Publication }> = ({ pub }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
         >
-            <div className="pub-meta">
+            <div className="pub-meta" style={{ flexWrap: 'wrap', gap: '8px' }}>
                 <span className="pub-date">{new Date(pub.date).getFullYear()}</span>
-                <span className="pub-journal">{pub.publication}</span>
+                <span className="pub-journal" style={{ wordBreak: 'break-word' }}>{pub.publication}</span>
             </div>
             <h3 className="pub-title chalk-text">{pub.title}</h3>
-            <p className="pub-authors">{pub.authors.join(', ')}</p>
-            <div className="pub-actions">
+            <p className="pub-authors" style={{ wordBreak: 'break-word', hyphens: 'auto' }}>{pub.authors.join(', ')}</p>
+            <div className="pub-actions" style={{ flexWrap: 'wrap' }}>
                 {pub.url_pdf && (
                     <a href={pub.url_pdf} target="_blank" rel="noopener noreferrer" className="pub-link">
                         <FileText size={16} />

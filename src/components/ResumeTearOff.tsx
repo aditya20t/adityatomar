@@ -37,16 +37,16 @@ const ResumeTearOff: React.FC = () => {
             initial={{ y: 0 }}
             style={{
                 position: 'fixed',
-                bottom: '40px',
-                right: '40px',
-                width: '160px',
-                height: '110px',
+                bottom: '20px',
+                right: '20px',
+                width: 'var(--envelope-width)',
+                height: 'var(--envelope-height)',
                 zIndex: 1000,
                 cursor: 'pointer',
                 perspective: '1000px'
             }}
             whileHover={{
-                x: [0, -2, 2, -2, 2, 0],
+                x: [0, -1, 1, -1, 1, 0],
                 rotate: [0, -1, 1, -1, 1, 0],
                 scale: 1.05,
                 transition: { duration: 0.4, repeat: 0 }
@@ -55,7 +55,7 @@ const ResumeTearOff: React.FC = () => {
             {/* Paper that pops out (Tucked deeper) */}
             <motion.div
                 animate={{
-                    y: isHovered ? -55 : 30,
+                    y: isHovered ? 'var(--envelope-paper-hover-y)' : 'var(--envelope-paper-idle-y)',
                     opacity: isHovered ? 1 : 0,
                     scale: isHovered ? 1 : 0.8
                 }}
@@ -63,9 +63,9 @@ const ResumeTearOff: React.FC = () => {
                 style={{
                     position: 'absolute',
                     top: 0,
-                    left: '20px',
-                    width: '120px',
-                    height: '130px',
+                    left: '10px',
+                    width: 'calc(var(--envelope-width) - 20px)',
+                    height: 'var(--envelope-paper-height)',
                     backgroundColor: '#ffffff',
                     border: '1px solid #ddd',
                     boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
@@ -89,7 +89,7 @@ const ResumeTearOff: React.FC = () => {
                 bottom: 0,
                 left: 0,
                 width: '100%',
-                height: '80px',
+                height: 'calc(var(--envelope-body-height) - 5px)',
                 backgroundColor: '#fde68a', // Darker yellow for back
                 border: '2px solid var(--border-color)',
                 borderRadius: '4px',
@@ -102,7 +102,7 @@ const ResumeTearOff: React.FC = () => {
                 bottom: 0,
                 left: 0,
                 width: '100%',
-                height: '85px',
+                height: 'var(--envelope-body-height)',
                 backgroundColor: '#fef3c7',
                 border: '2px solid var(--border-color)',
                 borderTop: 'none',
@@ -134,10 +134,10 @@ const ResumeTearOff: React.FC = () => {
                     animate={{ opacity: isHovered ? 0 : 1, y: isHovered ? -10 : 0 }}
                     style={{
                         position: 'absolute',
-                        top: -30,
+                        top: -25,
                         left: 0,
                         width: '100%',
-                        height: '35px',
+                        height: '30px',
                         backgroundColor: '#fef3c7',
                         border: '2px solid var(--border-color)',
                         clipPath: 'polygon(0% 100%, 50% 0%, 100% 100%)',
@@ -159,13 +159,13 @@ const ResumeTearOff: React.FC = () => {
 
                 <span style={{
                     fontFamily: '"Architects Daughter", cursive',
-                    fontSize: '1.2rem',
+                    fontSize: 'clamp(0.8rem, 3.5vw, 1.2rem)',
                     fontWeight: 900,
                     color: '#1e352f',
                     zIndex: 4,
                     textAlign: 'center',
                     lineHeight: 1.1,
-                    marginTop: '10px'
+                    marginTop: '5px'
                 }}>
                     Grab my<br />resume
                 </span>
