@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAG | Aditya Tomar</title>
+    <link>//localhost:1313/tags/rag/</link>
+      <atom:link href="//localhost:1313/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <description>RAG</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>RAG</title>
+      <link>//localhost:1313/tags/rag/</link>
+    </image>
+    
+    <item>
+      <title>ResearchAssistant</title>
+      <link>//localhost:1313/project/researchassistant/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/researchassistant/</guid>
+      <description>&lt;p&gt;A Streamlit-based research assistant that uses LangGraph to build a multi-step workflow for searching academic papers on arXiv, selecting one, and performing question answering directly on its content.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,75 @@
+[
+  {
+    "title": "BharatBBQ: A Multilingual Bias Benchmark for Question Answering in the Indian Context",
+    "authors": [
+      "Aditya Tomar",
+      "Nihar Ranjan Sahoo",
+      "Pushpak Bhattacharyya"
+    ],
+    "date": "2025-01-01T00:00:00Z",
+    "doi": "10.1162/TACL.a.55",
+    "publication": "*Transactions of the Association for Computational Linguistics (TACL)*, Volume 13, pages 1672–1692",
+    "publication_short": "In *TACL*, 2025",
+    "abstract": "Evaluating social biases in language models (LMs) is crucial for ensuring fairness and minimizing the reinforcement of harmful stereotypes in AI systems. Existing benchmarks, such as the Bias Benchmark for Question Answering (BBQ), primarily focus on Western contexts, limiting their applicability to the Indian context. To address this gap, we introduce BharatBBQ, a culturally adapted benchmark designed to assess biases in Hindi, English, Marathi, Bengali, Tamil, Telugu, Odia, and Assamese. BharatBBQ covers 13 social categories, including 3 intersectional groups, reflecting prevalent biases in the Indian sociocultural landscape. Our dataset contains 49,108 examples in one language that are expanded using translation and verification to 392,864 examples in eight different languages. We evaluate five multilingual LM families across zero- and few-shot settings, analyzing their bias and stereotypical bias scores. Our findings highlight persistent biases across languages and social categories and often amplified biases in Indian languages compared to English, demonstrating the necessity of linguistically and culturally grounded benchmarks for bias evaluation.",
+    "summary": "BharatBBQ is a culturally adapted benchmark for assessing social biases in language models across eight Indian languages, featuring 392,864 examples across 13 categories.",
+    "tags": [
+      "Natural Language Processing",
+      "Bias",
+      "Multilingual",
+      "LLMs"
+    ],
+    "links": [
+      {
+        "name": "ACL Anthology",
+        "url": "https://aclanthology.org/2025.tacl-1.75/"
+      }
+    ],
+    "url_pdf": "https://aclanthology.org/2025.tacl-1.75.pdf",
+    "slug": "bharatbbq"
+  },
+  {
+    "title": "Stereotype Detection as a Catalyst for Enhanced Bias Detection: A Multi-Task Learning Approach",
+    "authors": [
+      "Aditya Tomar",
+      "Rudra Murthy",
+      "Pushpak Bhattacharyya"
+    ],
+    "date": "2025-07-01T00:00:00Z",
+    "doi": "",
+    "publication": "The 63rd Annual Meeting of the Association for Computational Linguistics",
+    "publication_short": "In ACL, 2025 (Findings)",
+    "abstract": "Bias and stereotypes in language models can cause harm, especially in sensitive areas like content moderation and decision-making. This paper addresses bias and stereotype detection by exploring how jointly learning these tasks enhances model performance. We introduce StereoBias, a unique dataset labeled for bias and stereotype detection across five categories religion, gender, socio-economic status, race, profession, and others, enabling a deeper study of their relationship. Our experiments compare encoder-only models and fine-tuned decoder-only models using QLoRA. While encoderonly models perform well, decoder-only models also show competitive results. Crucially, joint training on bias and stereotype detection significantly improves bias detection compared to training them separately. Additional experiments with sentiment analysis confirm that the improvements stem from the connection between bias and stereotypes, not multi-task learning alone. These findings highlight the value of leveraging stereotype information to build fairer and more effective AI systems.\n",
+    "summary": "This paper demonstrates that jointly learning bias and stereotype detection using the new StereoBias dataset significantly improves bias detection in language models, underscoring the importance of leveraging stereotype information to build fairer AI systems.\n",
+    "tags": [
+      "Natural Language Processing",
+      "Stereotype",
+      "Bias",
+      "Responsible AI"
+    ],
+    "links": [],
+    "url_pdf": "https://arxiv.org/pdf/2507.01715",
+    "slug": "conference-paper"
+  },
+  {
+    "title": "Mathematics Isn’t Culture-Free: Probing Cultural Gaps via Entity and Scenario Perturbations",
+    "authors": [
+      "Aditya Tomar",
+      "Nihar Ranjan Sahoo",
+      "Ashish Mittal",
+      "Rudra Murthy",
+      "Pushpak Bhattacharyya"
+    ],
+    "date": "2025-07-02T00:00:00Z",
+    "doi": "",
+    "publication": "*arXiv preprint arXiv:2507.00883*",
+    "publication_short": "In *arXiv*, 2025",
+    "abstract": "Although mathematics is often considered culturally neutral, the way mathematical problems are presented can carry implicit cultural context. Existing benchmarks like GSM8K are predominantly rooted in Western norms, including names, currencies, and everyday scenarios. In this work, we create culturally adapted variants of the GSM8K test set for five regions Africa, India, China, Korea, and Japan using prompt-based transformations followed by manual verification. We evaluate six large language models (LLMs), ranging from 8B to 72B parameters, across five prompting strategies to assess their robustness to cultural variation in math problem presentation. Our findings reveal a consistent performance gap: models perform best on the original US-centric dataset and comparatively worse on culturally adapted versions. However, models with reasoning capabilities are more resilient to these shifts, suggesting that deeper reasoning helps bridge cultural presentation gaps in mathematical tasks.\n",
+    "summary": "This work shows that large language models perform best on US-centric math problems but struggle with culturally adapted variants, highlighting a need for culturally robust benchmarks, while reasoning-focused models prove more resilient.\n",
+    "tags": [
+      "Large Language Models"
+    ],
+    "links": [],
+    "url_pdf": "https://arxiv.org/pdf/2507.00883",
+    "slug": "preprint"
+  }
+]

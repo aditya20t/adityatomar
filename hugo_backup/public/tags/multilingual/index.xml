@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multilingual | Aditya Tomar</title>
+    <link>//localhost:1313/tags/multilingual/</link>
+      <atom:link href="//localhost:1313/tags/multilingual/index.xml" rel="self" type="application/rss+xml" />
+    <description>Multilingual</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Multilingual</title>
+      <link>//localhost:1313/tags/multilingual/</link>
+    </image>
+    
+    <item>
+      <title>BharatBBQ: A Multilingual Bias Benchmark for Question Answering in the Indian Context</title>
+      <link>//localhost:1313/publication/bharatbbq/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/bharatbbq/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

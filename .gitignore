@@ -1,13 +1,24 @@
-# Hugo
-public/
-resources/_gen/
-.hugo_build.lock
-hugo_stats.json
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Node.js
-node_modules/
-package-lock.json
+node_modules
+dist
+dist-ssr
+*.local
 
-# OS
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-.hugo/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
