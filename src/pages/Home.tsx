@@ -6,7 +6,7 @@ import projectsData from '../data/projects.json';
 import publicationsData from '../data/publications.json';
 
 const Home: React.FC = () => {
-    const featuredProjects = projectsData.slice(0, 3);
+    const featuredProjects = projectsData.filter(project => (project as any).featured);
     const featuredPublications = publicationsData.slice(0, 3);
 
     return (

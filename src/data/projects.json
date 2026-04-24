@@ -1,5 +1,35 @@
 [
   {
+    "title": "MusicGenreClassifier",
+    "summary": "A real-time music genre classifier using a fine-tuned DistilHuBERT model and Gradio web interface.",
+    "tags": [
+      "PyTorch",
+      "Transformers",
+      "Audio",
+      "Gradio",
+      "Hugging Face"
+    ],
+    "external_link": "https://github.com/aditya20t/MusicGenreClassifier",
+    "content": "This project uses a fine-tuned DistilHuBERT model to classify music genres from the GTZAN dataset. It features a real-time web interface built with Gradio for seamless audio uploads and recording.",
+    "slug": "music-genre-classifier",
+    "featured": false
+  },
+  {
+    "title": "AtomPDF",
+    "summary": "A premium, ad-free PDF utility built with Flutter for seamless merging, splitting, and compressing of documents. Published on PlayStore.",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "PDF",
+      "Mobile App",
+      "Ad-Free"
+    ],
+    "external_link": "https://play.google.com/store/apps/details?id=com.aditya.atom_pdf",
+    "content": "AtomPDF is a lightweight, ad-free mobile application designed for seamless PDF management. It offers essential tools like merging, splitting, and compressing PDFs without intrusive ads or paywalls, focusing on speed and simplicity.",
+    "slug": "atompdf",
+    "featured": true
+  },
+  {
     "title": "ChatStat",
     "summary": "A Streamlit-based WhatsApp chat analyzer designed to provide insightful statistics and visualizations.",
     "tags": [
@@ -10,7 +40,8 @@
     ],
     "external_link": "https://github.com/tirtheshjain/ChatStat",
     "content": "A Streamlit-based WhatsApp chat analyzer designed to provide insightful statistics about your conversations and visualizations like word clouds, sentiment analysis, and activity maps.",
-    "slug": "chatstat"
+    "slug": "chatstat",
+    "featured": false
   },
   {
     "title": "ResearchAssistant",
@@ -24,7 +55,8 @@
     ],
     "external_link": "https://github.com/aditya20t/ResearchAssistant",
     "content": "A Streamlit-based research assistant that uses LangGraph to build a multi-step workflow for searching academic papers on arXiv, selecting one, and performing question answering directly on its content.",
-    "slug": "researchassistant"
+    "slug": "researchassistant",
+    "featured": true
   },
   {
     "title": "SLM_Skeleton",
@@ -37,6 +69,7 @@
     ],
     "external_link": "https://github.com/aditya20t/SLM_Skeleton",
     "content": "A modular, research-friendly Transformer architecture for building and experimenting with small-scale language models — designed for learning, exploration, and open research.",
-    "slug": "slm-skeleton"
+    "slug": "slm-skeleton",
+    "featured": true
   }
 ]
