@@ -12,7 +12,23 @@
     "external_link": "https://github.com/aditya20t/MusicGenreClassifier",
     "content": "This project uses a fine-tuned DistilHuBERT model to classify music genres from the GTZAN dataset. It features a real-time web interface built with Gradio for seamless audio uploads and recording.",
     "slug": "music-genre-classifier",
-    "featured": false
+    "featured": true
+  },
+  {
+    "title": "TrendPost",
+    "summary": "A premium, AI-native LinkedIn workspace designed for real-time trend discovery and high-engagement content creation.",
+    "tags": [
+      "Next.js",
+      "FastAPI",
+      "Docker",
+      "LLMs",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "external_link": "https://github.com/aditya20t/TrendPost",
+    "content": "TrendPost is a high-fidelity AI assistant featuring a professional-grade Workspace Layout, real-time Discovery Mode, and multi-model support (Gemini, OpenAI, Anthropic, HuggingFace). It uses a custom AI environment and sleek glassmorphism UI for a premium creator experience.",
+    "slug": "trendpost",
+    "featured": true
   },
   {
     "title": "AtomPDF",
@@ -41,7 +57,7 @@
     "external_link": "https://github.com/tirtheshjain/ChatStat",
     "content": "A Streamlit-based WhatsApp chat analyzer designed to provide insightful statistics about your conversations and visualizations like word clouds, sentiment analysis, and activity maps.",
     "slug": "chatstat",
-    "featured": false
+    "featured": true
   },
   {
     "title": "ResearchAssistant",
