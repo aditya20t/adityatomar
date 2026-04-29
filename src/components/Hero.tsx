@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                     <a href="https://github.com/aditya20t" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <GithubIcon size={24} />
                     </a>
-                    <a href="https://linkedin.com/in/adityatomar" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://linkedin.com/in/aditya20t" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <LinkedinIcon size={24} />
                     </a>
                     <a href="mailto:aditya20tomar@gmail.com" className="social-icon">
