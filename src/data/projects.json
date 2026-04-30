@@ -25,7 +25,7 @@
       "Tailwind CSS",
       "Framer Motion"
     ],
-    "external_link": "https://github.com/aditya20t/TrendPost",
+    "external_link": "https://trendpost-xi.vercel.app/",
     "content": "TrendPost is a high-fidelity AI assistant featuring a professional-grade Workspace Layout, real-time Discovery Mode, and multi-model support (Gemini, OpenAI, Anthropic, HuggingFace). It uses a custom AI environment and sleek glassmorphism UI for a premium creator experience.",
     "slug": "trendpost",
     "featured": true
@@ -40,7 +40,7 @@
       "Mobile App",
       "Ad-Free"
     ],
-    "external_link": "https://play.google.com/store/apps/details?id=com.aditya.atom_pdf",
+    "external_link": "https://atompdf.vercel.app/",
     "content": "AtomPDF is a lightweight, ad-free mobile application designed for seamless PDF management. It offers essential tools like merging, splitting, and compressing PDFs without intrusive ads or paywalls, focusing on speed and simplicity.",
     "slug": "atompdf",
     "featured": true
