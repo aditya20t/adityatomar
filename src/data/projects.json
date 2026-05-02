@@ -1,5 +1,63 @@
 [
   {
+    "title": "SLM_Skeleton",
+    "summary": "A modular, research-friendly Transformer architecture for building and experimenting with small-scale language models.",
+    "tags": [
+      "PyTorch",
+      "Transformers",
+      "LLMs",
+      "Research"
+    ],
+    "external_link": "https://github.com/aditya20t/SLM_Skeleton",
+    "content": "A modular, research-friendly Transformer architecture for building and experimenting with small-scale language models — designed for learning, exploration, and open research.",
+    "slug": "slm-skeleton",
+    "featured": true
+  },
+  {
+    "title": "Profession-Aware LLM Personalization",
+    "summary": "A framework for generating user-personalized responses by integrating profession–question relevance scoring into LLM fine-tuning.",
+    "tags": [
+      "LLM",
+      "Fine-tuning",
+      "DPO",
+      "GRPO",
+      "Alignment"
+    ],
+    "external_link": "",
+    "content": "Developed a profession-aware LLM fine-tuning framework to generate user-personalized responses by integrating profession–question relevance scoring into the answer selection process. Designed and implemented DPO and GRPO-based answer ranking pipelines, leveraging relevance score differentials to construct a high-quality preference dataset (~150K samples) for model alignment. Demonstrated improved contextual alignment of LLM outputs with user background.",
+    "slug": "llm-profession-personalization",
+    "featured": false
+  },
+  {
+    "title": "Gender Bias in Multimodal AI Systems",
+    "summary": "Investigating and mitigating gender stereotypes in text-to-image and image-to-text pipelines using synthetic professional images.",
+    "tags": [
+      "Computer Vision",
+      "Multimodal AI",
+      "Bias Detection",
+      "Ethics"
+    ],
+    "external_link": "",
+    "content": "Conducted a study on gender bias in multimodal AI, evaluating text-to-image and image-to-text pipelines using gender-neutral prompts and synthetic professional images. Identified gender propagation in image captioning and mitigated bias via a caption masking strategy. Discovered and analyzed occupation-linked gender stereotypes in image generation models.",
+    "slug": "multimodal-gender-bias",
+    "featured": false
+  },
+  {
+    "title": "Social Bias Mitigation in Knowledge Graphs",
+    "summary": "Improving bias detection and mitigation in Knowledge Graph embeddings using PyKEEN and GraphVite.",
+    "tags": [
+      "Knowledge Graphs",
+      "Embeddings",
+      "PyKEEN",
+      "GraphVite",
+      "Bias Mitigation"
+    ],
+    "external_link": "",
+    "content": "Implemented and trained Knowledge Graph embeddings (TransE, ComplEx, DistMult, RotatE) on FB15K237 and Wikidata5m using PyKEEN, OpenKE, and GraphVite. Developed a Wiki5m dataset class and reverse-engineered training methodology to reproduce baseline. Improved bias detection accuracy in KG embeddings (68% → 71%) by refining data preprocessing pipelines.",
+    "slug": "knowledge-graph-bias",
+    "featured": false
+  },
+  {
     "title": "MusicGenreClassifier",
     "summary": "A real-time music genre classifier using a fine-tuned DistilHuBERT model and Gradio web interface.",
     "tags": [
@@ -60,6 +118,21 @@
     "featured": true
   },
   {
+    "title": "Pragmatic Language Understanding in Humans vs LLMs",
+    "summary": "A comparative study of pragmatic language comprehension between humans and LLMs using a custom Hindi dataset.",
+    "tags": [
+      "NLP",
+      "GPT-4",
+      "OpenHathi",
+      "Hindi",
+      "Evaluation"
+    ],
+    "external_link": "",
+    "content": "Compared pragmatic language understanding between humans and LLMs. Created a Hindi dataset and evaluated GPT-4 Turbo and OpenHathi on metaphor, hyperbole, indirect speech, and humor, benchmarking their performance against human understanding. Found that GPT-4 demonstrated surprising strength in metaphor comprehension, even outperforming humans in some aspects.",
+    "slug": "pragmatic-language-understanding",
+    "featured": false
+  },
+  {
     "title": "ResearchAssistant",
     "summary": "A Streamlit-based research assistant that uses LangGraph to build a multi-step workflow for searching academic papers on arXiv.",
     "tags": [
@@ -72,20 +145,6 @@
     "external_link": "https://github.com/aditya20t/ResearchAssistant",
     "content": "A Streamlit-based research assistant that uses LangGraph to build a multi-step workflow for searching academic papers on arXiv, selecting one, and performing question answering directly on its content.",
     "slug": "researchassistant",
-    "featured": true
-  },
-  {
-    "title": "SLM_Skeleton",
-    "summary": "A modular, research-friendly Transformer architecture for building and experimenting with small-scale language models.",
-    "tags": [
-      "PyTorch",
-      "Transformers",
-      "LLMs",
-      "Research"
-    ],
-    "external_link": "https://github.com/aditya20t/SLM_Skeleton",
-    "content": "A modular, research-friendly Transformer architecture for building and experimenting with small-scale language models — designed for learning, exploration, and open research.",
-    "slug": "slm-skeleton",
     "featured": true
   }
 ]

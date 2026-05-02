@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "date": "2025-07",
+    "content": "Paper on **Stereotype Detection as a Catalyst for Enhanced Bias Detection** accepted to **ACL Findings 2025**."
+  },
+  {
+    "id": 2,
+    "date": "2025-11",
+    "content": "Paper on **BharatBBQ**, a multilingual bias benchmark for Indian languages, accepted to **TACL**."
+  },
+  {
+    "id": 3,
+    "date": "2026-04",
+    "content": "Launched **AtomPDF**,  a robust PDF manipulation tool with privacy-first processing."
+  }
+]

@@ -13,14 +13,11 @@ interface Project {
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     return (
         <motion.div
-            className="project-card sketch-outline"
-            whileHover={{ y: -5 }}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            className="project-card"
+            whileHover={{ y: -8 }}
         >
             <div className="project-header">
-                <h3 className="project-title chalk-text">{project.title}</h3>
+                <h3 className="project-title">{project.title}</h3>
                 {project.external_link && (
                     <a href={project.external_link} target="_blank" rel="noopener noreferrer" className="project-link">
                         <ExternalLink size={18} />

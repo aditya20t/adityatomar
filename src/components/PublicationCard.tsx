@@ -19,17 +19,13 @@ const PublicationCard: React.FC<{ pub: Publication }> = ({ pub }) => {
 
     return (
         <motion.div
-            className="publication-card sketch-outline"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            className="publication-card"
         >
             <div className="pub-meta" style={{ flexWrap: 'wrap', gap: '8px' }}>
                 <span className="pub-date">{new Date(pub.date).getFullYear()}</span>
                 <span className="pub-journal" style={{ wordBreak: 'break-word' }}>{pub.publication}</span>
             </div>
-            <h3 className="pub-title chalk-text">{pub.title}</h3>
+            <h3 className="pub-title">{pub.title}</h3>
             <p className="pub-authors" style={{ wordBreak: 'break-word', hyphens: 'auto' }}>{pub.authors.join(', ')}</p>
             <div className="pub-actions" style={{ flexWrap: 'wrap' }}>
                 {pub.url_pdf && (

@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar: React.FC = () => {
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const links = [
         { name: 'Home', path: '/' },
         { name: 'Publications', path: '/publications' },
         { name: 'Projects', path: '/projects' },
-        { name: 'Experience', path: '/experience' },
         { name: 'Education', path: '/education' },
     ];
 
@@ -20,10 +27,10 @@ const Navbar: React.FC = () => {
     const closeMenu = () => setIsOpen(false);
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
                 <Link to="/" className="nav-logo" onClick={closeMenu}>
-                    Aditya Tomar
+                    AT
                 </Link>
 
                 <div className="nav-actions">
@@ -48,8 +55,6 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <div className="nav-controls">
-                        <ThemeToggle />
-
                         {/* Mobile Menu Toggle */}
                         <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
