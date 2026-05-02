@@ -40,7 +40,7 @@ const SkillsMindMap: React.FC = () => {
                             {category.title}
                         </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-                            {category.skills.map((skill, index) => (
+                            {category.skills.map((skill) => (
                                 <motion.div
                                     key={skill}
                                     whileHover={{ y: -2, backgroundColor: 'var(--border-color)' }}

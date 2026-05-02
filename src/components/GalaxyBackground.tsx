@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Sparkles, Atom, Orbit, Cpu, Zap } from 'lucide-react';
+import { Atom, Orbit, Cpu, Zap } from 'lucide-react';
 
 const GalaxyBackground: React.FC = () => {
     const mouseX = useMotionValue(0);
