@@ -11,7 +11,7 @@ const LinkedinIcon = ({ size = 24 }) => (
 );
 
 const Hero: React.FC = () => {
-    const roles = ["NLP", "ML", "Speech", "Diffusion AI", "AI Alignment"];
+    const roles = ["NLP", "ML", "Speech AI", "Diffusion AI", "AI Alignment"];
     const [roleIndex, setRoleIndex] = useState(0);
     const [displayText, setDisplayText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
                 <div className="hero-header-stack">
-                    <span className="hero-eyebrow">Artificial Intelligence Researcher</span>
+                    <span className="hero-eyebrow">AI Research Student @ CFIL Lab, IIT Bombay</span>
                     <h1 className="hero-title">Aditya Tomar</h1>
                     <p className="hero-tagline">Architecting the future of Alignment and Multimodal Intelligence.</p>
                 </div>
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
                         <div className="console-tab">latent_exploration.sh</div>
                     </div>
                     <div className="typing-container">
-                        <span className="typing-static">Exploration:</span>
+                        <span className="typing-static">Exploring:</span>
                         <span className="typing-dynamic">{displayText}</span>
                         <span className="typing-cursor">█</span>
                     </div>
