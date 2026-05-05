@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
                 <Link to="/" className="nav-logo" onClick={closeMenu}>
-                    AT
+                    Adi<span className="logo-at">@</span><span>IITB</span>
                 </Link>
 
                 <div className="nav-actions">
