@@ -21,8 +21,8 @@ const News: React.FC = () => {
                     <Sparkles size={14} />
                     Live Momentum
                 </div>
-                <h2 className="section-title">Research Feed</h2>
-                <p className="section-subtitle">Active updates from the AI research frontier.</p>
+                <h2 className="section-title">Activity Feed</h2>
+                {/* <p className="section-subtitle">Active updates from the AI research frontier.</p> */}
             </div>
 
             <div className="terminal-window">
@@ -34,14 +34,14 @@ const News: React.FC = () => {
                     </div>
                     <div className="terminal-title">
                         <TerminalIcon size={14} />
-                        research_updates — aditya@tomar
+                        Updates — aditya@activity
                     </div>
                     <div className="terminal-placeholder"></div>
                 </div>
-                
+
                 <div className="terminal-body">
                     {newsData.map((item, index) => (
-                        <motion.div 
+                        <motion.div
                             key={item.id}
                             className="terminal-line"
                             initial={{ opacity: 0, x: -10 }}
@@ -52,7 +52,7 @@ const News: React.FC = () => {
                             <span className="terminal-prompt">
                                 <span className="prompt-user">aditya</span>
                                 <span className="prompt-at">@</span>
-                                <span className="prompt-host">research</span>
+                                <span className="prompt-host">activity</span>
                                 <span className="prompt-sep">:</span>
                                 <span className="prompt-path">~</span>
                                 <span className="prompt-char">$</span>
@@ -63,22 +63,24 @@ const News: React.FC = () => {
                             </span>
                         </motion.div>
                     ))}
-                    <motion.div 
-                        className="terminal-cursor-line"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ repeat: Infinity, duration: 0.8, repeatType: "reverse" }}
-                    >
+                    <div className="terminal-cursor-line">
                         <span className="terminal-prompt">
                             <span className="prompt-user">aditya</span>
                             <span className="prompt-at">@</span>
-                            <span className="prompt-host">research</span>
+                            <span className="prompt-host">activity</span>
                             <span className="prompt-sep">:</span>
                             <span className="prompt-path">~</span>
                             <span className="prompt-char">$</span>
                         </span>
-                        <span className="terminal-cursor">█</span>
-                    </motion.div>
+                        <motion.span
+                            className="terminal-cursor"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ repeat: Infinity, duration: 0.8, repeatType: "reverse" }}
+                        >
+                            █
+                        </motion.span>
+                    </div>
                 </div>
             </div>
         </section>
