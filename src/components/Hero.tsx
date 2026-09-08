@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
                 <div className="hero-header-stack">
-                    <span className="hero-eyebrow">AI Research Student @ CFIL Lab, IIT Bombay</span>
+                    <span className="hero-eyebrow">AI Research Student @ CFILT Lab, IIT Bombay</span>
                     <h1 className="hero-title">Aditya Tomar</h1>
                     <p className="hero-tagline">Architecting the future of Alignment and Multimodal Intelligence.</p>
                 </div>
